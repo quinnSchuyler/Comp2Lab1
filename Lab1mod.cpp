@@ -1,13 +1,11 @@
-#include <iostream>
-/*
-Checks if number is perfect. If it is return 1
-if not return 0
+#include <iostream> // used for getting user input and displaying text in GetMaxValue()
 
-*/
+// Checks if number is perfect. If it is return 1
+// if not return 0
 int IsPerfect(int number) {
     if (number <= 0) {
         return 0; // negatives and zero aren't perfect numbers
-    }
+    } 
 
     int sum = 0;
 
@@ -21,11 +19,13 @@ int IsPerfect(int number) {
         return 1; // perfect number
     } else {
         return 0; // not perfect
-    }
-}
+    } // end else
+} // end IsPerfect()
 
 /*
     GetMaxValue
+    checks if no cli arg was passed to it, and prompts the user for a number in that case
+    otherwise the return value is the cli arg value
 */
 int GetMaxValue(int argc, char *argv[]){
     using std::cout;
@@ -38,7 +38,7 @@ int GetMaxValue(int argc, char *argv[]){
         cout << '\n'; // new line
         cin >> userInput; // get user input
         cout << '\n'; // new line again
-    } 
+    } // end if
     else { // if there is a cli arg use that
         userInput = atoi(argv[1]); // convert argv[1] from string to int
     } // end else

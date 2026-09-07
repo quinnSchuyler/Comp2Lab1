@@ -1,5 +1,5 @@
 #include <iostream>
-#include "lab1mod.h"
+#include "lab1mod.h" // IsPerfect() & GetMaxValue()
 using namespace std;
 
 /*

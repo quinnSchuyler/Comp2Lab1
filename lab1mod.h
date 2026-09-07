@@ -1,3 +1,8 @@
+//header file that contains the prototypes of the following functions:
+// IsPerfect()
+// GetMaxValue()
+// their full code is visible in the lab1mod.cpp file with additional comments
+
 #ifndef ISPERFECT_H
 #define ISPERFECT_H
 
