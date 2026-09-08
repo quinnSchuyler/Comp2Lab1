@@ -1,5 +1,5 @@
 #include <iostream>
-#include "lab1mod.h" // IsPerfect() & GetMaxValue()
+#include "lab1mod.h" // IsPerfect() & GetMaxValue() & IsWeird()
 using namespace std;
 
 /*
@@ -10,13 +10,31 @@ using namespace std;
 int main(int argc, char *argv[]){
     
     long int MaxNumber = GetMaxValue(argc, argv); // use the cli arg or get user input
+    
+    cout << "Checking for perfect numbers less than or equal to " << MaxNumber << "...";
+    cout << '\n';
 
     for(long int lcv = 0;lcv <= MaxNumber; lcv++){ //iterate through each number up the to max
         if (IsPerfect(lcv)){ // if it's perfect
             cout << lcv; // output the perfect number
+            cout << " is perfect";
             cout << '\n';
         } // end if
-    } // end while
+    } // end for
+
+    /* Unfinished extra credit implementation, to be finished at a later date
+    cout << '\n';
+    cout << "Checking for weird numbers less than or equal to " << MaxNumber << "...";
+    cout << '\n';
+
+    for(long int lcv = 0;lcv <= MaxNumber; lcv++){ //iterate through each number up the to max
+        if (IsWeird(lcv)){ // if it's weird
+            cout << lcv; // output the weird number
+            cout << " is weird";
+            cout << '\n';
+        } // end if
+    } // end for
+    */
 
     return 0;
 } // end main
