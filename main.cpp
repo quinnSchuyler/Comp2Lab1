@@ -1,3 +1,6 @@
+// Quinn Schuyler
+// Computational Problem Solving 2, Lab 1
+
 #include <iostream> // for cin and cout
 #include "lab1mod.h" // IsPerfect() & GetMaxValue() & IsWeird()
 using namespace std;
