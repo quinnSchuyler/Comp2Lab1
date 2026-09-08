@@ -1,4 +1,4 @@
-#include <iostream>
+#include <iostream> // for cin and cout
 #include "lab1mod.h" // IsPerfect() & GetMaxValue() & IsWeird()
 using namespace std;
 
@@ -22,19 +22,6 @@ int main(int argc, char *argv[]){
         } // end if
     } // end for
 
-    /* Unfinished extra credit implementation, to be finished at a later date
-    cout << '\n';
-    cout << "Checking for weird numbers less than or equal to " << MaxNumber << "...";
-    cout << '\n';
-
-    for(long int lcv = 0;lcv <= MaxNumber; lcv++){ //iterate through each number up the to max
-        if (IsWeird(lcv)){ // if it's weird
-            cout << lcv; // output the weird number
-            cout << " is weird";
-            cout << '\n';
-        } // end if
-    } // end for
-    */
 
     return 0;
 } // end main

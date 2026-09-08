@@ -4,9 +4,6 @@
 using std::cout;
 using std::cin;
 
-// part of extra credit, unused and unfinished
-// using IntVec = std::vector<int>;
-
 // Checks if number is perfect. If it is return 1
 // if not return 0
 int IsPerfect(int number) {
@@ -52,34 +49,3 @@ int GetMaxValue(int argc, char *argv[]){
     return userInput; // either from cli arg or from cin
 } // end GetMaxValue
 
-
-// Attempted implementation of extra credit question, incomplete
-/*
-// 'IntVec' instead of 'std::vector<int>'
-IntVec GetFactors(int number) {
-    IntVec factors;
-    
-    // Check every number from 1 to the number itself
-    for (int i = 1; i <= number; ++i) {
-        if (number % i == 0) {
-            factors.push_back(i); // If it divides perfectly, store it
-        }
-    }
-    
-    return factors;
-}
-
-int IsWeird(int number){
-    //find all the factors and store them
-    // check all combinations of them to make sure they're not the same as the input number
-    IntVec myFactors = GetFactors(number); // get a vector of all the factors
-    int isWeird = 0;
-
-    for (int factor : myFactors) {
-        std::cout << factor << '\n';
-    }
-
-    return isWeird;
-    
-}
-*/
